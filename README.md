@@ -1,2 +1,2 @@
 # cloud_native_java
-A repostiory to try out cloud native java examples
+A repository to try out cloud native java examples
