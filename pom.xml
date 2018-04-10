@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>learn-cloud-nativ</name>
+	<name>learn-cloud-native</name>
 	<description>Demo project for Spring Boot 2 an</description>
 	<modules>
 		<module>zuul-server</module>
