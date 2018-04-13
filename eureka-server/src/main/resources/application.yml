@@ -1,7 +1,32 @@
-server:
-  port: 8000
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: localhost
+
+---
+spring:
+  profiles: peer1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8005/eureka/
+server:
+  port: 8000
+
+---
+spring:
+  profiles: peer2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+server:
+  port: 8005
