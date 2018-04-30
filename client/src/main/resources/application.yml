@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: project-provider
+
+info:
+  applicationn:
+    name:
+    description:
+    version:
