@@ -1,9 +1,26 @@
+server:
+  port: 8015
 spring:
   application:
-    name: project-provider
-
+    name: sample-client-1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 info:
-  applicationn:
-    name:
-    description:
-    version:
+  application:
+    name: sample-client-1
+    description: This is a test client registering with eureka and zuul
+    version: 0.0.1-SNAPSHOT
+
+eureka:
+  client:
+    enabled: true
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka,http://localhost:8005/eureka
+  instance:
+    preferIpAddress: true
+
